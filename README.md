@@ -26,13 +26,14 @@ Firstly, download the pretrained models from [here](https://drive.google.com/dri
 
 We provide compressed MobileNetV1 by **50% FLOPs** and **50% Inference time**, and also compressed MobileNetV2 by **70% FLOPs**, with PyTorch. The comparison with vanila models as follows:
 
-| Models                   | Top1 Acc (%) | Top5 Acc (%) | Latency (ms) |
-| ------------------------ | ------------ | ------------ | ------------ |
-| MobileNetV1-width*0.75   | 68.4         | 88.2         | 72.5         |
-| **MobileNetV1-50%FLOPs** | **70.5**     | **89.3**     | 68.9         |
-| **MobileNetV1-50%Time**  | **70.2**     | **89.4**     | 63.2         |
-| MobileNetV2-width*0.75   | 69.8         | 89.6         | -            |
-| **MobileNetV2-70%FLOPs** | **70.9**     | **89.9**     | -            |
+| Models                   | Top1 Acc (%) | Top5 Acc (%) | Latency (ms) | MACs (M) |
+| ------------------------ | ------------ | ------------ | ------------ | -------- |
+| MobileNetV1              | 70.9         | 89.5         | 123          | 569      |
+| MobileNetV1-width*0.75   | 68.4         | 88.2         | 72.5         | 325      |
+| **MobileNetV1-50%FLOPs** | **70.5**     | **89.3**     | 68.9         | 285      |
+| **MobileNetV1-50%Time**  | **70.2**     | **89.4**     | 63.2         | 272      |
+| MobileNetV2-width*0.75   | 69.8         | 89.6         | -            | 300      |
+| **MobileNetV2-70%FLOPs** | **70.9**     | **89.9**     | -            | 210      |
 
 To test the model, run:
 
