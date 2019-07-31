@@ -8,7 +8,7 @@ If you find the models useful, please kindly cite our paper:
 
 ```
 @inproceedings{he2018amc,
-  title={Amc: Automl for model compression and acceleration on mobile devices},
+  title={AMC: AutoML for Model Compression and Acceleration on Mobile Devices},
   author={He, Yihui and Lin, Ji and Liu, Zhijian and Wang, Hanrui and Li, Li-Jia and Han, Song},
   booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
   pages={784--800},
@@ -63,6 +63,10 @@ The produced result is:
 ## Timing Logs
 
 Here we provide timing logs on Google Pixel 1 using **TensorFlow Lite** in `./logs` directory. We benchmarked the original MobileNetV1 (mobilenet), MobileNetV1 with 0.75 width multiplier (0.75mobilenet), 50% FLOPs pruned MobileNetV1 (0.5flops) and 50% time pruned MobileNetV1 (0.5time). Each model is benchmarked for 200 iterations with extra 100 iterations for warming up, and repeated for 3 runs. 
+
+## AMC
+
+You can also find our PyTorch implementation of AMC [Here](https://github.com/mit-han-lab/amc-release.git).
 
 ## Contact
 
